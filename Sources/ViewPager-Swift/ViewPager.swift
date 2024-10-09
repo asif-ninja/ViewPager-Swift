@@ -30,6 +30,7 @@ public protocol ViewPagerDelegate: AnyObject {
     func didMoveToControllerAtIndex(index:Int)
 }
 
+@MainActor
 public class ViewPager: NSObject {
     
     fileprivate weak var dataSource:ViewPagerDataSource?
